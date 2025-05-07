@@ -4,7 +4,7 @@
     // Function to load content dynamically
     async function loadPage(page) {
         try {
-            const response = await fetch(`/${page}`);
+            const response = await fetch(`../../Pages/${page}`);
             if (response.ok) {
                 const html = await response.text();
                 const parser = new DOMParser();
