@@ -21,6 +21,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.MapFallbackToPage("/Index");
+app.MapFallbackToPage("/index");
 
 app.Run();

@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AgenticAI.Pages
 {
-    public class IndexModel : PageModel
+    public class indexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<indexModel> _loggerInstance; // Renamed to resolve ambiguity  
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public indexModel(ILogger<indexModel> logger)
         {
-            _logger = logger;
+            _loggerInstance = logger;
         }
 
         public void OnGet()
