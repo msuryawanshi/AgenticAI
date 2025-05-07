@@ -14,12 +14,12 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
 app.UseStaticFiles();
-
+app.UseDefaultFiles();
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapRazorPages();
 app.MapFallbackToPage("/index");
 
